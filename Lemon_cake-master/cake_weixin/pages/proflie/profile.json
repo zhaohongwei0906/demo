@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "ProfileManager": "/components/ProfileManager/ProfileManager",
+        "ProfileUser": "/components/ProfileUser/ProfileUser"
+    },
+    "enablePullDwonRefresh": true,
+    "navigationBarTitleText": "个人中心",
+    "backgroundColor": "#fff"
+}

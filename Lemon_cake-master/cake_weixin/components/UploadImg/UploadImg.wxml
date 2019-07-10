@@ -1,0 +1,22 @@
+
+
+<view class="add-img-list">
+    <view class=" add-img-list-item position-relative" wx:for="{{imgList}}" wx:key="index">
+        <image 
+        class="added-img" 
+        src="{{item.url}}" 
+        mode="aspectFit" 
+        data-index="{{index}}" 
+        catchtap="previewImg"
+        catchlongpress="deleteImg" 
+        />
+    </view>
+    <view wx:if="{{imgList.length!=imgTotal}}" class=" add-img-list-item">
+        <view class="wx_UploadImg_container">
+            <view class="draw-mask" bindtap="selectImg">
+                <button  class="btn btn-asc"></button>
+            </view>
+        </view>
+    </view>   
+</view>   
+

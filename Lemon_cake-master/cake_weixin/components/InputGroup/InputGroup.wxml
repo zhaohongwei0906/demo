@@ -1,0 +1,28 @@
+<view >
+                <view class="align-between">
+                    <view class="title">{{title}}:</view>
+                    <button 
+                    class="btn btn-asc" 
+                    disabled="{{inputGroup.noAdd}}"
+                    bindtap="addItem" 
+                    data-num="{{itemTotal}}"></button>
+                </view>
+                <view class="point" wx:for="{{values}}" wx:key="index">
+                    <input 
+                    class="my-input" 
+                    type="text" 
+                    maxlength="{{itemMaxLength}}" 
+                    placeholder="项目{{index+1}}" name="product-spec-item{{index+1}}" 
+                    value="{{item.value}}"
+                    bindinput="handleInput"  
+                    data-index="{{index}}" 
+                    />
+                    <button 
+                    class="btn btn-desc absolue-right" 
+                    disabled="{{inputGroup.noDel}}"
+                    bindtap="deleteItem" 
+                    data-index="{{index}}"  
+                    ></button>
+                </view>
+                <view class="sm-muted item-remarks">(备注：最多{{itemTotal}}条，每条少于{{itemMaxLength}}个字)</view>
+            </view>

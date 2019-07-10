@@ -1,0 +1,46 @@
+/* pages/shoplist/shoplist.wxss */
+page{
+    background: #fff;
+}
+.shop-name{
+    font-size:16px;
+    color:#333;
+    width:380rpx;
+}
+.shop-saleTotal{
+    color:#666;
+    font-size: 12px;
+}
+.shop-remark{
+    color:#f00;
+    border:1px solid #f9867e;
+    text-align: center;
+    font-size:10px;
+    background:#f6c6c3;
+    border-radius:5rpx;
+    width:60rpx;
+    padding:5rpx;
+    margin-right: 10rpx;
+}
+ .shop-price .icon{
+    color:#f00;
+} 
+.shop-price .price{
+    color:#f00;
+    font-size:30rpx;
+} 
+
+.start-after{
+    color:#e2e2e2;
+    position: relative;
+}
+.start-before{
+    color:#f19138;
+    position: absolute;
+    top:0;
+    left: 0;
+    /* width: 75%; */
+    overflow: hidden;
+}
+
+

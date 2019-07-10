@@ -1,0 +1,3 @@
+<view >
+    <button bindtap="handlePaid">微信支付</button>
+</view>

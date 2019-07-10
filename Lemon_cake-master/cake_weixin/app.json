@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/test/test",
+    "pages/cart/cart",
+    "pages/shoplist/shoplist",
+    "pages/shopdetails/shopdetails",
+    "pages/addMessage/addMessage",
+    "pages/proflie/profile",
+    "pages/building/buiding",
+    "pages/diy/diy",
+    "pages/getUserInfo/getUserInfo",
+    "pages/shopConfirm/shopConfirm",
+    "pages/product/product",
+    "pages/message/message",
+    "pages/messageDetails/messagedDetails",
+    "components/UploadImg/UploadImg"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "宜家蛋糕",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "pages/static/home.png",
+        "selectedIconPath": "pages/static/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "优惠",
+        "iconPath": "pages/static/message.png",
+        "selectedIconPath": "pages/static/message-active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "pages/static/cart.png",
+        "selectedIconPath": "pages/static/cart-active.png"
+      },
+      {
+        "pagePath": "pages/proflie/profile",
+        "text": "个人中心",
+        "iconPath": "pages/static/profile.png",
+        "selectedIconPath": "pages/static/profile-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

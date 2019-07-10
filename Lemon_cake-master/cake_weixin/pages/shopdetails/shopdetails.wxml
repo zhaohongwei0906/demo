@@ -1,0 +1,64 @@
+<view>
+    <view class="shop-details base-font">
+        <view class="between">
+            <text class="h1">{{detail.title}}</text>
+            <text class="sm-muted">本月销量 {{detail.saleTotal}}</text>
+        </view>
+        <view class="splide">
+            <view class="imglist">
+                <image class="item" src="{{item.url}}" lazy-load mode="aspectFit" wx:for="{{detail.imgList}}" wx:key="index"/>
+            </view> 
+            <view class="circle arrow-left">
+            </view>
+            <view class="circle arrow-right">
+            </view>    
+        </view>
+        <text class="h2">商品详情</text>
+        <view>
+            <view class="list-item">
+                <text class="point"></text> {{detail.descr}}
+                <text class="sm-muted">( 1 份 )</text>
+            </view>
+        </view> 
+        <text class="h2">温馨提示</text>
+        
+        <view  class="list-item"
+        wx:for="{{detail.alert}}">
+            <text class="point"></text>
+            {{item.value}}
+        </view>
+        
+        <view class="detail-comments">
+            <view class="between">
+                <text class="h3">商品评价</text>
+                <text class="sm-muted">更多评论({{detail.comments}}条)</text>
+            </view>
+        </view>
+    </view>
+    <view class="tab-bottom between">
+        <view class="detail-price">
+            <view >
+                <text class="h2 discounted-price">￥{{nowPrice}} </text>
+                <text class="base-font detail-discount">{{discount}}折</text>
+            </view>
+            <view class="sm-muted" style="padding-bottom:10rpx;">
+                <text class="base-font  old-price">原价: ￥ {{oldPrice}}</text><text>({{spec}})</text>
+            </view>
+        </view>
+        <button 
+        wx:if="{{isManager}}"
+        class="detail-button bgGreen h2" 
+        catchtap='jumpToSet'
+        data-caid="{{caid}}"
+        >修改商品信息</button>
+        <button 
+        wx:else
+        class="detail-button h2" 
+        catchtap='jumpToComfirm'
+        data-headerImg="{{detail.headerImg}}"
+        data-specs="{{detail.specs}}"
+        data-title="{{detail.title}}"
+        data-caid="{{caid}}"
+        >{{isInCart?'商品信息确认':'加入购物车'}}</button>
+    </view>
+</view>

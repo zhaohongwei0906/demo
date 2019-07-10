@@ -1,0 +1,10 @@
+{
+    "enablePullDwonRefresh": true,
+    "navigationBarTitleText": "购物车",
+    "backgroundColor": "#fff",
+    "usingComponents":{
+        "InputBox":"/components/InputBox/InputBox",
+        "ToTapBtn":"/components/ToTapBtn/ToTapBtn",
+        "skeleton":"/components/skeleton/skeleton"
+    }
+}

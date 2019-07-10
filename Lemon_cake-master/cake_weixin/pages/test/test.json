@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "TableBox": "/components/TableBox/TableBox",
+        "skeleton": "/components/skeleton/skeleton"
+    },
+    "enablePullDwonRefresh": true,
+    "navigationBarTitleText": "test",
+    "backgroundColor": "#f0145a"
+}

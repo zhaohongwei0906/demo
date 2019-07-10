@@ -1,0 +1,61 @@
+
+<view class='add-message'>
+    <form bindsubmit="formSubmit">
+        <view class='add-message-view'>
+            <view>
+                <view class="title">商品标题:</view>
+                <input class="my-input" type="text" name="title" placeholder="最多10个字..." maxlength="10" value="{{data.title}}"/>
+            </view>
+            <view >
+                <view class="title">商品列表头图:</view>
+                <!-- UploadImg组件 -->
+                <UploadImg 
+                id="header-img" 
+                count="1" 
+                imgTotal="1"
+                imgList="{{data.headerImg}}"></UploadImg>
+            </view>
+            <view >
+                <view class="title">商品详情图片:</view>
+                <!-- UploadImg组件 -->
+                <UploadImg 
+                id="detail-imgs" 
+                count="9" 
+                imgTotal="9"
+                imgList="{{data.imgList}}"></UploadImg>
+            </view>
+            <view >
+                <view class="title">商品类别:</view>
+                <radio-group class='radio-group'  name="classType">
+                <label class='radio'  wx:for="{{productClass}}"wx:key="index">
+                    <radio  value="{{item.value}}" checked="{{item.checked}}" />
+                    {{item.name}}
+                </label>
+                </radio-group>
+            </view>
+            <view >
+                <view class="title">商品描述:</view>
+                <input class="my-input" type="text" name="desc" placeholder="最多10个字..." maxlength="10" value="{{data.desc}}"/>
+            </view>
+            
+            <!-- TableBox组件 -->
+            <TableBox
+            id="specs" 
+            title="商品信息" 
+            maxRow="6"
+            tableData="{{tableData}}"
+            ></TableBox>
+            <!-- InputGroup组件 -->
+            <InputGroup 
+            id="alert" 
+            title="提示信息" 
+            itemMaxLength="50"   
+            itemTotal="12"
+            values="{{data.alert}}"></InputGroup>
+        </view>
+
+
+        <button class='btn-bottom bgGreen' form-type="submit">{{caid===0?"添加商品":"确认修改"}}</button>
+    </form>
+    
+</view>

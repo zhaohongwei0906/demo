@@ -1,0 +1,42 @@
+
+.title{
+  font-size: 28rpx;
+  color:#000;
+  padding-bottom:20rpx;
+}
+.spec{
+  display: flex;
+}
+.radio-group{
+  display: flex;
+  flex-direction: column;
+}
+.radio .wx-radio-input{
+  width:24rpx;
+  height: 24rpx;
+  margin-bottom: 8rpx;
+}
+.price{
+  text-align: right;
+  width: 200rpx;
+  font-size: 28rpx;
+}
+.confirm-list{
+  font-size:28rpx;
+  padding:20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remarks{
+    width: auto;
+    font-size:24rpx;
+    border:1px solid #ddd;
+    margin: 0 20rpx 20rpx;
+    padding:20rpx;
+}
+.num{
+  width: 50rpx;
+  text-align: center;
+}
+
